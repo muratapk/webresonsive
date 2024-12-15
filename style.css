@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100vw;/*ekran genişliğine kendisi küçülüyor*/
+    height: 100vh;
+    background-image: url('manzara.jpeg');
+    background-position: bottom;
+    background-size: cover;
+   display: flex;
+  justify-content: center;
+  align-items:flex-end;
+
+}
+.header-content{
+    margin-bottom:150px;/* not yazar bilirsiniz*/
+    color:whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: brown;
+    margin:10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+.ctn{
+    padding:8px 15px;
+    background-color: darkcyan;
+    color:whitesmoke;
+    border-radius: 5px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px;
+    color:whitesmoke;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-link li {
+    margin:0px 30px;
+}
+.nav-link li a{
+    color:whitesmoke;
+    font-weight: 900;
+    transition: all 1s;
+    
+    
+}
+.nav-link li a:hover{
+    color:yellow;
+    text-shadow: 2px 2px 1px black;
+   
+}
+.menu-btn{
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   background-color: transparent;
+   color:whitesmoke;
+   width: 40px; 
+   cursor: pointer;
+   background-color: #d7de17;
+   display: none;
+}
+section{
+    width: 80%;
+    margin:80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 900;
+}
+/*mobil uygulama için kullanılacak kısım*/
+@media only screen and (max-width: 850px) {
+    .navbar {
+        padding: 0px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+  .mobile-menu{
+    margin-top:0px;
+  }
+  .menu-btn{
+    display: block;
+  }
+.nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top:-900px;
+    }
+
+    .nav-link li {
+        margin: 30px auto;
+    }
+    
+}

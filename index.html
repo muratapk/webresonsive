@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Uludağ Beyaz Otel</h1>
+        <ul class="nav-link">
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li class="ctn"><a href="">Home</a></li>
+
+        </ul>
+        <a href="#" class="menu-btn">XXX</a>
+
+    </nav>
+<!--header-->
+    <header>
+        <div class="header-content">
+            <h2>Uludağ Manzarası ve Otel</h1>
+           <div class="line"></div>
+           <h1>Dünyanın En Güzel Dağı</h1>
+           <a href="#" class="ctn">Bizi Takip Et</a>
+        </div>
+    </header>
+<!--header-->
+<!--orta kısım-->
+<section>
+    <div class="title">Yakın Zamandaki Haberler</div>
+    <div class="line"></div>
+</section>
+</body>
+<script>
+     const menuBtn = document.querySelector(".menu-btn");
+        const navlink = document.querySelector(".nav-link");
+
+        menuBtn.addEventListener("click", function(){
+            navlink.classList.toggle("mobile-menu");
+        });
+</script>
+</html>
